@@ -3,7 +3,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-function Carrousel(props) {
+function Carrousel(props:any) {
   return (
     <div className="modal">
       <span className="close-modal" onClick={() => props.setShow(false)}>
@@ -19,7 +19,7 @@ function Carrousel(props) {
         interval={5000}
         infiniteLoop={true}
       >
-        {props.img_items.map((img, index) => {
+        {props.img_items.map((img:any, index:any) => {
           return (
             <div key={index}>
               <img

@@ -1,6 +1,6 @@
 import React from "react";
 
-function GlobalInfoCard(props) {
+function GlobalInfoCard(props:any) {
   return (
     <div className={"global__info__card card__" + props.class} >
       <div className="card__face1 face">

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ModalCarroussel from "./Carousel";
 
-function ProjectCard(props) {
+function ProjectCard(props:any) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   // Sumbit the Form
-  const openModal = (event) => {
+  const openModal = (event:any) => {
     event.preventDefault();
     setModalIsOpen(true);
   };
