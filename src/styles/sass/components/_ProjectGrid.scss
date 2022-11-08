@@ -1,0 +1,25 @@
+.project__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  justify-content: space-evenly;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1440px) {
+  .project__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 0px;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+    .project__grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 0px;
+      justify-content: space-evenly;
+    }
+  }

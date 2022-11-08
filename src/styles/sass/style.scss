@@ -1,0 +1,23 @@
+/* Utils */
+@import "./utils/variables";
+@import "./utils/mixins/btn";
+
+/* Base */
+@import "./base/reset_css";
+@import "./base/fonts";
+
+/* Components */
+@import "./components/_Intro";
+@import "./components/GlobalInfo";
+@import "./components/GlobalInfoCard";
+@import "./components/projectGrid";
+@import "./components/projectCard";
+@import "./components/Carousel";
+
+/* Layout */
+@import "./layout/navbar";
+
+/* Pages */
+@import "./pages/homepage";
+@import "./pages/aboutme";
+@import "./pages/project";

@@ -1,0 +1,35 @@
+nav{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  justify-content: center;
+  padding: 0 5%;
+  align-items: center;
+  & a {
+    color: $white;
+    margin: 0 12.5px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  & a:hover {
+    color: lighten($darkblue, 50%);
+  }
+
+  & .active, .active:hover{
+    color: $lightblue;
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) 
+{
+  nav{
+    font-size: 16px;
+    padding: 0 2%;
+    & a{
+      margin: 0 10px;
+    }
+  }
+}

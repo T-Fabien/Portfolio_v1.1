@@ -1,0 +1,123 @@
+.project__grid__card {
+  align-items: center;
+  background-color: lighten($dark, 10%);
+  border-radius: 5px;
+  display: flex;
+  flex: 0 0 calc(33.33333% - 90px);
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  &__container {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    padding: 10px;
+    & img {
+      border-radius: 5px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  &__tags {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 15px;
+
+    & p {
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 4px 15px;
+    }
+    .option {
+      background-color: darken(#e65100, 5%);
+    }
+    .html {
+      background-color: darken(#00aaff, 20%);
+    }
+    .langage {
+      background-color: darkgoldenrod;
+    }
+    .framework {
+      background-color: #2e7d32;
+    }
+    .library {
+      background-color: darken(darkorchid, 5%);
+    }
+  }
+  &__links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .btn_primary{
+      font-size: 16px;
+      margin: 5px 5px 15px 5px;
+      a {
+        padding: 16px 8px;
+      }
+    }
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1440px) {
+  .project__grid__card {
+    flex: 0 0 calc(50% - 70px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .project__grid__card {
+    &__title {
+      font-size: 18px;
+    }
+    &__tags {
+      gap: 15px 10px;
+      & p {
+        border-radius: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project__grid__card {
+    flex: 0 0 calc(100%);
+    &__title {
+      font-size: 20px;
+    }
+    &__tags {
+      gap: 15px 10px;
+      & p {
+        border-radius: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .project__grid__card {
+    flex: 0 0 calc(100%);
+    &__title {
+      font-size: 18px;
+    }
+    &__tags {
+      gap: 15px 10px;
+      & p {
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 4px 12px;
+      }
+    }
+  }
+}

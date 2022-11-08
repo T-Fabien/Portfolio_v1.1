@@ -1,0 +1,18 @@
+.aboutme {
+  color: black;
+  .vertical-timeline-element-date {
+    color: white;
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1169px) {
+  .aboutme {
+    color: black;
+    .vertical-timeline-element-date {
+      color: black;
+      opacity: 1;
+    }
+  }
+}

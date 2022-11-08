@@ -1,0 +1,106 @@
+.modal {
+  align-items: center;
+  background-color: rgba(lighten($dark, 10), 1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px lighten($dark, 20);
+  color: white;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 90%;
+  max-height: calc(100% - 80px);
+  position: fixed;
+  bottom: 0;
+  top: 40px;
+  left: 0;
+  right: 0;
+  padding: 10px 0px;
+  z-index: 2;
+
+  .close-modal {
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px 15px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    z-index: 2;
+  }
+
+  .carousel-root{
+    width: 100%;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    height: 50%;
+    margin-top: 20vh;
+    opacity: 1;
+  }
+
+   .carousel .control-arrow:before {
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+  }
+  .control-prev.control-arrow:before {
+    border-right: 32px solid #fff;
+  }
+  .control-next.control-arrow:before {
+    border-left: 32px solid #fff;
+  }
+
+  .slide .modal__img{
+    height: calc(90vh - 130px);
+    width: calc(84vw - 50px);
+    object-fit: contain;
+  }
+
+  .thumbs-wrapper {
+    bottom: -20px;
+    position: relative;
+  }
+  .thumbs {
+    .thumb {
+      border: 3px solid #333;
+    }
+    .selected {
+      border: 3px solid #fff;
+    }
+  }
+}
+
+@media (max-height: 750px) {
+  .modal .legend{
+    position: absolute;
+    bottom: 60px;
+  }
+}
+
+@media (max-height: 500px) {
+  .thumbs {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .modal{
+    .carousel .control-arrow:before {
+      border-top: 16px solid transparent;
+      border-bottom: 16px solid transparent;
+    }
+    .control-prev.control-arrow:before {
+      border-right: 16px solid #fff;
+    }
+    .control-next.control-arrow:before {
+      border-left: 16px solid #fff;
+    }
+    .control-dots{
+      bottom: 60px;
+    }
+  }
+  .thumbs {
+    display: none;
+  }
+}
